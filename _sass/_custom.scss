@@ -1,0 +1,188 @@
+:root {
+    --theme-color-green: #84cac1;
+    --theme-color-gray: #edf1f0;
+    --theme-color-pink-high: #e30b60;
+    --theme-color-pink-medium: #e14065;
+    --theme-color-pink-low: #dd979e;
+
+    /* Kollectik */
+    @font-face {
+        font-family: "Kollectif";
+        src:
+          local("Kollectif"),
+          url("fonts\\Kollektif.ttf") format("TrueType");
+    }
+
+    @font-face {
+        font-family: "Kollectif";
+        src:
+          local("Kollectif"),
+          url("fonts\\Kollektif-Bold.ttf") format("TrueType");
+        font-weight: bold;
+    }
+
+    @font-face {
+        font-family: "Kollectif";
+        src:
+          local("Kollectif"),
+          url("fonts\\Kollektif-Italic.ttf") format("TrueType");
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Kollectif";
+        src:
+          local("Kollectif"),
+          url("fonts\\Kollektif-BoldItalic.ttf") format("TrueType");
+        font-weight: bold;
+        font-style: italic;
+    }
+    /* End - Kollectik */
+
+    /* Roboto */
+    @font-face {
+        font-family: "Roboto Bk";
+        src:
+          local("Roboto Bk"),
+          url("fonts\\Roboto-Black.ttf") format("TrueType");
+    }
+
+    @font-face {
+        font-family: "Roboto Bk";
+        src:
+          local("Roboto Bk"),
+          url("assets\fonts\Roboto-BlackItalic.ttf") format("TrueType");
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Roboto";
+        src:
+          local("Roboto"),
+          url("fonts\\Roboto-Bold.ttf") format("TrueType");
+        font-weight: bold;
+    }
+
+    @font-face {
+        font-family: "Roboto";
+        src:
+          local("Roboto"),
+          url("fonts\\Roboto-Italic.ttf") format("TrueType");
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Roboto";
+        src:
+          local("Roboto"),
+          url("fonts\\Roboto-BoldItalic.ttf") format("TrueType");
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Roboto";
+        src:
+          local("Roboto"),
+          url("fonts\\Roboto-Thin.ttf") format("TrueType");
+        font-weight: 100;
+    }
+
+    @font-face {
+        font-family: "Roboto";
+        src:
+          local("Roboto"),
+          url("fonts\\Roboto-ThinItalic.ttf") format("TrueType");
+        font-weight: 100;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Roboto";
+        src:
+          local("Roboto"),
+          url("fonts\\Roboto-Light.ttf") format("TrueType");
+        font-weight: 300;
+    }
+
+    @font-face {
+        font-family: "Roboto";
+        src:
+          local("Roboto"),
+          url("fonts\\Roboto-LightItalic.ttf") format("TrueType");
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Roboto";
+        src:
+          local("Roboto"),
+          url("fonts\\Roboto-Regular.ttf") format("TrueType");
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: "Roboto";
+        src:
+          local("Roboto"),
+          url("fonts\\Roboto-Medium.ttf") format("TrueType");
+        font-weight: 500;
+    }
+
+    @font-face {
+        font-family: "Roboto";
+        src:
+          local("Roboto"),
+          url("fonts\\Roboto-MediumItalic.ttf") format("TrueType");
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Roboto Cn";
+        src:
+          local("Roboto Cn"),
+          url("fonts\\Roboto-Condensed.ttf") format("TrueType");
+    }
+
+    @font-face {
+        font-family: "Roboto Cn";
+        src:
+          local("Roboto Cn"),
+          url("fonts\\Roboto-BoldCondensed.ttf") format("TrueType");
+        font-weight: bold;
+    }
+
+    @font-face {
+        font-family: "Roboto Cn";
+        src:
+          local("Roboto Cn"),
+          url("fonts\\Roboto-CondensedItalic.ttf") format("TrueType");
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Roboto Cn";
+        src:
+          local("Roboto Cn"),
+          url("fonts\\Roboto-BoldCondensedItalic.ttf") format("TrueType");
+        font-weight: bold;
+        font-style: italic;
+    }
+    /* End - Roboto */
+
+    .color-green {
+        color: var(--theme-color-green);
+    }
+
+    .color-pink-high {
+        color: var(--theme-color-pink-high);
+    }
+
+}
+
+.catch-phrase {
+    font-family: "Kollectif";
+    font-weight: bold;
+}

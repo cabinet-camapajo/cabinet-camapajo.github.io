@@ -4,20 +4,44 @@
 
 layout: home
 
-catchPhrase: Votre santé, notre priorité !
+separators:
+    header: assets/images/header-separator.png
+    default: 
+
+catchPhrase: 
+    - "Votre "
+    - santé
+    - ", notre "
+    - priorité
+    - " !"
+logo: assets/images/logo.png
 menu:
+    items:
+        - team
+        - healing
+        - opening
     team: Notre Équipe
     healing: Nos Soins
     opening: Nos Horaires
 
-phone: 0556216784
-address:
-    first: Locaux SOS Médecin
-    second: 955 Avenue de Bordeaux
-    city: 33127 Saint Jean d’Illac
-conv:
-    title: Conventionnées CPAM
-    content: Carte Vitale & Tiers Payant
+info:
+    items:
+        - phone
+        - address
+        - conv
+    phone: 
+        logo: assets/images/phone.png
+        title: 0556216784
+    address:
+        logo: assets/images/map.png
+        title: Locaux SOS Médecin
+        content: |
+            955 Avenue de Bordeaux
+            33127 Saint Jean d’Illac
+    conv:
+        logo: assets/images/soins.png
+        title: Conventionnées CPAM
+        content: Carte Vitale & Tiers Payant
 
 team: 
     - member: Caroline
