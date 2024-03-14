@@ -182,7 +182,34 @@
 
 }
 
-.catch-phrase {
-    font-family: "Kollectif";
-    font-weight: bold;
+.row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+h1 {
+    position: absolute;
+    margin-top: -1000px;
+}
+
+.header {
+    border-top: 3px solid var(--theme-color-green);
+    .catch-phrase {
+        font-family: "Kollectif";
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 600px) {
+        .site-nav input:checked ~ .trigger {
+            display: flex;
+            padding-bottom: 5px;
+        }
+    }
 }

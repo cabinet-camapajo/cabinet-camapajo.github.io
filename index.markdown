@@ -25,6 +25,8 @@ menu:
     opening: Nos Horaires
 
 info:
+    image: assets/images/nurse.png
+    alt: infirmière
     items:
         - phone
         - address
@@ -103,9 +105,12 @@ opening:
 
 legals:
     title: Mentions légales
-    updatedat: Mises à jour le 29/02/2024
+    updatedAt: Mises à jour le 29/02/2024
     content: "Ce site respecte l’article R4312-12 du code de la Santé Publique : il n’a qu’un objectif d’information et n’a pas vocation de faire la promotion du cabinet."
     consult: Consulter l’ensemble des mentions légales ici
+
+footer:
+    logo: assets/images/logo-footer.png
 
 
 
