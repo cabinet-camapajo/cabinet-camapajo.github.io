@@ -199,17 +199,79 @@ h1 {
     margin-top: -1000px;
 }
 
-.header {
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+body {
+    padding: 0;
+    margin: 0;
     border-top: 3px solid var(--theme-color-green);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    margin-top: 30px;
+    font-family: "Kollectif";
+    font-size: 25px;
+
+    span, a {
+        line-height: 40px;
+    }
+
+    .wrapper {
+        align-items: center;
+    }
+
     .catch-phrase {
-        font-family: "Kollectif";
-        font-weight: bold;
+        font-style: italic;
+        flex: 2;
+        display: flex;
+        justify-content: flex-end;
+
+        .text-wrapper {
+            width: 180px;
+
+            
+        }
+    }
+
+    .site-title {
+        flex: 3;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 250px;
+        }
+    }
+
+    .site-nav {
+        flex: 2;
+
+        .healing {
+            padding-left: 50px;
+        }
     }
 
     @media screen and (max-width: 600px) {
         .site-nav input:checked ~ .trigger {
             display: flex;
             padding-bottom: 5px;
+        }
+    }
+
+    .header-separator {
+        display: flex;
+        margin-top: 20px;
+        justify-content: center;
+
+        img {
+            width: 90%;
         }
     }
 }

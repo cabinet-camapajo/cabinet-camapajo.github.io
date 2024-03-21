@@ -13,7 +13,7 @@ catchPhrase:
     - santé
     - ", notre "
     - priorité
-    - " !"
+    - "&nbsp;!"
 logo: assets/images/logo.png
 menu:
     items:

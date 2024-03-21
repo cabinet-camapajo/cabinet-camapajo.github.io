@@ -5,19 +5,21 @@
 
   <body>
     <h1>{{site.title}}</h1>
-    <header class="header column" role="banner">
+    <header class="container header column" role="banner">
       <div class="wrapper row">
         <div class="catch-phrase">
-          {%- for catch in page.catchPhrase -%}
-            {%- case forloop.index0 -%}
-              {%- when 0, 2, 4 -%}
-                <span>{{ catch }}</span>
-              {%- when 1 -%}
-                <span class="color-green">{{ catch }}</span>
-              {%- when 3 -%}
-                <span class="color-pink-high">{{ catch }}</span>
-            {%- endcase -%}
-          {%- endfor -%}
+          <div class="text-wrapper">
+            {%- for catch in page.catchPhrase -%}
+              {%- case forloop.index0 -%}
+                {%- when 0, 2, 4 -%}
+                  <span>{{ catch }}</span>
+                {%- when 1 -%}
+                  <span class="color-green">{{ catch }}</span>
+                {%- when 3 -%}
+                  <span class="color-pink-high">{{ catch }}</span>
+              {%- endcase -%}
+            {%- endfor -%}
+          </div>
         </div>
 
         <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
@@ -36,17 +38,17 @@
     
           <div class="trigger column">
             {%- for menuItem in page.menu.items -%}
-              <a>{{ page.menu[menuItem] }}</a>
+              <a class="{{menuItem}}">{{ page.menu[menuItem] }}</a>
             {%- endfor -%}
           </div>
         </nav>
       </div>
-      <div>
+      <div class="header-separator">
         <img src="{{page.separators.header}}" alt="separateur" title="separateur"/>
       </div>
     </header>
 
-    <main class="page-content" aria-label="Content">
+    <main class="container  page-content" aria-label="Content">
       <section class="info row">
         <div class="column"><img src="{{page.info.image}}" alt="{{page.info.alt}}" title="{{page.info.alt}}"/></div>
         <div class="column">
@@ -141,7 +143,7 @@
       </section>
     </main>
 
-    <footer class="site-footer h-card">
+    <footer class="container site-footer h-card">
       <data class="u-url" href="{{ "/" | relative_url }}"></data>
     
       <div class="row">
