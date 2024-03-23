@@ -38,65 +38,80 @@
     
           <div class="trigger column">
             {%- for menuItem in page.menu.items -%}
-              <a class="{{menuItem}}">{{ page.menu[menuItem] }}</a>
+              <a class="{{menuItem}}" href="#{{menuItem}}">{{ page.menu[menuItem] }}</a>
             {%- endfor -%}
           </div>
         </nav>
       </div>
-      <div class="header-separator">
-        <img src="{{page.separators.header}}" alt="separateur" title="separateur"/>
-      </div>
+      <div class="header-separator"></div>
     </header>
 
-    <main class="container  page-content" aria-label="Content">
-      <section class="info row">
-        <div class="column"><img src="{{page.info.image}}" alt="{{page.info.alt}}" title="{{page.info.alt}}"/></div>
-        <div class="column">
+    <main class="container page-content" aria-label="Content">
+      <section class="info row center">
+        <div class="column center"><img class="nurse" src="{{page.info.image}}" alt="{{page.info.alt}}" title="{{page.info.alt}}"/></div>
+        <div class="column gap10">
           {%- for infoItem in page.info.items -%}
-            <div class="row">
-              <div class="column">
-                <img src="{{page.info[infoItem].logo}}" alt="{{page.info[infoItem].title}}" title="{{page.info[infoItem].title}}"/>
+            <div class="row top gap20">
+              <div class="column icon">
+                <img class="icon" src="{{page.info[infoItem].logo}}" alt="{{page.info[infoItem].title}}" title="{{page.info[infoItem].title}}"/>
               </div>
-              <div class="column">
-                <div class="row title">{{page.info[infoItem].title}}</div>
-                {%- if page.info[infoItem].content -%}
-                <div class="row"><p>{{page.info[infoItem].content}}</p></div>
-                {%- endif -%}
-              </div>
+              {%- if page.info[infoItem].content -%}
+                <div class="column">
+                  <div class="row title">{{page.info[infoItem].title}}</div>
+                  <div class="row"><p>{{page.info[infoItem].content}}</p></div>
+                </div>
+              {%- else -%}
+                <div class="column no-content">
+                  <div class="row title">{{page.info[infoItem].title}}</div>
+                </div>
+              {%- endif -%}
             </div>
           {%- endfor -%}
           </div>
         </div>
       </section>
       <section class="team column">
-        <div class="row">
+        <div class="row center separator">
           <img src="{{page.separators.default}}" alt="separateur" title="separateur"/>
         </div>
-        <div class="row">
+        <div class="row center">
+          <a id="team" class="section-title">
             <h2>{{page.menu.team}}</h2>
+          </a>
         </div>
-        <div class="column wrapper">
-          {%- for member in page.team -%}
+        <div class="row center wrapper">
+          {%- for member in page.team.members -%}
           <div class="column {{member.member}}">
             <h3>{{member.member}}</h3>
             <h4>{{member.diploma}}</h4>
             <p>{{member.content}}</p>
           </div>
           {%- endfor -%}
+          <div class="wrapper-center">
+              <img src="{{page.team.logo}}" alt="infirmière" title="infirmière"/>
+          </div>
         </div>
       </section>
-      <section class="healing column">
-        <div class="row">
+      <section class="healing column center">
+        <div class="row center separator">
           <img src="{{page.separators.default}}" alt="separateur" title="separateur"/>
         </div>
-        <div class="row">
-          <h2>{{page.menu.healing}}</h2>
+        <div class="row center">
+          <a id="healing" class="section-title">
+            <h2>{{page.menu.healing}}</h2>
+          </a>
         </div>
-        <div class="column button">
+        <div class="column button clip">
           <div class="row">{{page.info.conv.title}}</div>
           <div class="row">{{page.info.conv.content}}</div>
+          <div class="clip-left">
+              <img src="{{page.healing.bandage}}" alt="pansement" title="pansement"/>
+          </div>
+          <div class="clip-right">
+              <img src="{{page.healing.pills}}" alt="pillules" title="pillules"/>
+            </div>
         </div>
-        <div class="column">
+        <div class="column clip2">
           <div class="row">{{page.healing.subtitle}}</div>
           <div class="row">
             <ul>
@@ -106,6 +121,21 @@
             </ul>
           </div>
           <div class="row">{{page.healing.footer}}</div>
+          <div class="clip2-top-left">
+              <img src="{{page.healing.syringe-blue}}" alt="seringue-bleue" title="seringue-bleue"/>
+          </div>
+          <div class="clip2-left">
+              <img src="{{page.healing.medicine}}" alt="médicaments" title="médicaments"/>
+          </div>
+          <div class="clip2-top-right">
+              <img src="{{page.healing.first-aid-kit}}" alt="kit-secours" title="kit-secours"/>
+          </div>
+          <div class="clip2-right">
+              <img src="{{page.healing.syringe-red}}" alt="seringue-rouge" title="seringue-rouge"/>
+          </div>
+          <div class="clip2-bottom-right">
+              <img src="{{page.healing.thermo}}" alt="thermomètre" title="thermomètre"/>
+          </div>
           <div class="column button">
             <div class="row">{{page.healing.meet.sub}}</div>
             <div class="row">{{page.healing.meet.cta}}</div>
@@ -113,11 +143,13 @@
         </div>
       </section>
       <section class="opening column">
-        <div class="row">
+        <div class="row center separator">
           <img src="{{page.separators.default}}" alt="separateur" title="separateur"/>
         </div>
-        <div class="row">
-          <h2>{{page.menu.opening}}</h2>
+        <div class="row center">
+          <a id="opening" class="section-title">
+            <h2>{{page.menu.opening}}</h2>
+          </a>
         </div>
         <div class="column">
           <h3>{{page.opening.sub}}</h3>
@@ -125,10 +157,10 @@
         </div>
       </section>
       <section class="legals column">
-        <div class="row">
+        <div class="row center separator">
           <img src="{{page.separators.default}}" alt="separateur" title="separateur"/>
         </div>
-        <div class="row">
+        <div class="row center section-title">
           <h2>{{page.legals.title}}</h2>
         </div>
         <div class="row">

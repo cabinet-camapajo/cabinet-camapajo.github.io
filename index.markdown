@@ -6,7 +6,7 @@ layout: home
 
 separators:
     header: assets/images/header-separator.png
-    default: 
+    default: assets/images/separator.png
 
 catchPhrase: 
     - "Votre "
@@ -33,7 +33,7 @@ info:
         - conv
     phone: 
         logo: assets/images/phone.png
-        title: 0556216784
+        title: 05 56 21 67 84
     address:
         logo: assets/images/map.png
         title: Locaux SOS Médecin
@@ -46,41 +46,50 @@ info:
         content: Carte Vitale & Tiers Payant
 
 team: 
-    - member: Caroline
-      diploma: Diplômée en 2004
-      content: >
-        J’ai exercé pendant 14 ans en
-        réanimation (chirurgicale, cardiaque,
-        neuro-chirurgicale, médicale). Puis
-        je me suis dirigée vers les soins à
-        domicile que je pratique depuis six
-        ans.
-    - member: Marion
-      diploma: Diplômée en 2014
-      content: >
-        Je me suis experimentée dans un
-        centre de dialyse, puis j’ai exercé en
-        tant qu’intérimaire dans plusieurs
-        services (laboratoire, soins à
-        domicile, chirurgie, EHPAD) avant de
-        m’installer en libéral en 2020.
-    - member: Pauline
-      diploma: Diplômée en 2011
-      content: >
-        J’ai toujours exercé à domicile.
-        D’abord en centre de soins, puis en
-        libéral, depuis 6 ans.
-    - member: Johanna
-      diploma: Diplômée en 2004
-      content: >
-        Après une carrière militaire riche
-        en expériences au sein du Servive
-        de Santé des Armées, j’ai entamé
-        une reconversion dans les soins à
-        domicile où je m’épanouis depuis
-        2022.
+    logo: assets/images/kind-nurse.png
+    members:
+        - member: Caroline
+          diploma: Diplômée en 2004
+          content: >
+              J’ai exercé pendant 14 ans en
+              réanimation (chirurgicale, cardiaque,
+              neuro-chirurgicale, médicale). Puis
+              je me suis dirigée vers les soins à
+              domicile que je pratique depuis six
+              ans.
+        - member: Marion
+          diploma: Diplômée en 2014
+          content: >
+              Je me suis experimentée dans un
+              centre de dialyse, puis j’ai exercé en
+              tant qu’intérimaire dans plusieurs
+              services (laboratoire, soins à
+              domicile, chirurgie, EHPAD) avant de
+              m’installer en libéral en 2020.
+        - member: Pauline
+          diploma: Diplômée en 2011
+          content: >
+              J’ai toujours exercé à domicile.
+              D’abord en centre de soins, puis en
+              libéral, depuis 6 ans.
+        - member: Johanna
+          diploma: Diplômée en 2004
+          content: >
+              Après une carrière militaire riche
+              en expériences au sein du Servive
+              de Santé des Armées, j’ai entamé
+              une reconversion dans les soins à
+              domicile où je m’épanouis depuis
+              2022.
 
 healing: 
+    bandage: assets/images/bandage.png
+    pills: assets/images/pills.png
+    syringe-blue: assets/images/syringe-blue.png
+    medicine: assets/images/medicine.png
+    first-aid-kit: assets/images/first-aid-kit.png
+    syringe-red: assets/images/syringe-red.png
+    thermo: assets/images/thermo.png
     subtitle: "Nous pratiquons tous les soins infirmiers, tels que :"
     list: 
         - Pansements simples ou complexes
