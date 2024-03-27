@@ -367,9 +367,18 @@ main.container {
 
     .button {
         background: var(--theme-color-green);
-        padding: 0.5rem 4rem;
+        padding: 0.7rem 4rem;
         border-radius: 1.2rem;
         width: fit-content;
+        display: flex;
+        align-items: center;
+
+        &.meet {
+            font-weight: bold;
+            .row:nth-child(2) {
+                font-size: 1.6rem;
+            }
+        }
     }
 
     section.team {
@@ -466,6 +475,7 @@ main.container {
                 transform: translateY(-50%);
                 img {
                     height: 15rem;
+                    filter: drop-shadow(1px 1px 0 #00000060) drop-shadow(-1px -1px 0 #00000060);
                 }
             }
         }
@@ -474,8 +484,7 @@ main.container {
     section.healing {
         .clip {
             position: relative;
-            margin-bottom: 3rem;
-            align-items: center;        
+            margin-bottom: 3rem;    
 
             img {
                 height: 6rem;
@@ -542,7 +551,7 @@ main.container {
             &-bottom-right {
                 position: absolute;
                 right: 1rem;
-                    bottom: 10rem;
+                bottom: 11rem;
             }
 
             .row {
@@ -559,6 +568,28 @@ main.container {
                 li::marker {
                     color: #00000060;
                 }
+            }
+        }
+
+        .top20 {
+            margin-top: 2rem;
+        }
+    }
+
+    section.opening {
+        .opening-wrapper {
+            height: 12rem;
+        }
+        .opening-container {
+            background: var(--theme-color-pink-low);
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            left: 0;
+            right: 0;
+            & * {
+                opacity: 1;
             }
         }
     }
