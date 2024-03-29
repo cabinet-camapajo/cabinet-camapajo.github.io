@@ -4,9 +4,14 @@
 
 layout: home
 
+to-top: assets/images/top.png
+
 separators:
     header: assets/images/header-separator.png
     default: assets/images/separator.png
+
+externals: 
+    maps: https://maps.app.goo.gl/gtHXaiL72hg5M4G57
 
 catchPhrase: 
     - "Votre "

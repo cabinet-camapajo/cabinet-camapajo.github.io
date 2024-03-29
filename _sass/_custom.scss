@@ -1,9 +1,13 @@
 :root {
     --theme-color-green: #84cac1;
+    --theme-color-green-60: #84CAC299;
+    --theme-color-green-40: #84CAC266;
     --theme-color-gray: #edf1f0;
     --theme-color-pink-high: #e30b60;
     --theme-color-pink-medium: #e14065;
     --theme-color-pink-low: #dd979e;
+    --theme-color-pink-low-20: #dd979e33;
+    --font-color-gray-low: #00000066; 
 
     /* Kollectik */
     @font-face {
@@ -246,6 +250,11 @@ body {
     border-top: 3px solid var(--theme-color-green);
     font-family: Roboto, "Roboto";
     font-size: 10px;
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 * {
@@ -350,6 +359,14 @@ main.container {
     .info {
         font-size: 18px;
         font-family: Roboto, "Roboto";
+        &> .column:nth-child(1) {
+            align-items: flex-end;
+            padding-right: 2rem;
+        }
+        &> .column:nth-child(2) {
+            align-items: flex-start;
+            padding-left: 2rem;
+        }
     }
 
     .separator {
@@ -366,7 +383,7 @@ main.container {
     }
 
     .button {
-        background: var(--theme-color-green);
+        background: var(--theme-color-green-60);
         padding: 0.7rem 4rem;
         border-radius: 1.2rem;
         width: fit-content;
@@ -512,7 +529,7 @@ main.container {
 
         .clip2 {
             position: relative;
-            padding: 3rem;
+            padding: 3rem 3rem 1rem;
 
             img {
                 height: 6rem;
@@ -577,20 +594,127 @@ main.container {
     }
 
     section.opening {
+        .separator {
+            margin-bottom: 1rem;
+        }
         .opening-wrapper {
-            height: 12rem;
+            height: 13.5rem;
         }
         .opening-container {
-            background: var(--theme-color-pink-low);
+            background: var(--theme-color-pink-low-20);
             position: absolute;
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
             left: 0;
             right: 0;
-            & * {
-                opacity: 1;
+            padding: 1rem 0 3rem;
+
+            h2 {
+                color: var(--theme-color-pink-high);
             }
+
+            .column.center {
+                h3 {
+                    margin: 0 0 0.3rem;
+                }
+                h3, p {
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
+
+    section.legals {
+        .row.update {
+            justify-content: flex-end;
+            color: var(--font-color-gray-low);
+            margin: 1rem 0 3rem;
+            width: 100%;
+        }
+        p {
+            text-align: justify;
+            text-wrap: pretty;
+        }
+        .column.button {
+            h3 {
+                margin: 0;
+            }
+            margin-top: 3rem;
+            width: 40%;
+            text-align: center
+        }
+        padding-bottom: 3rem;
+    }
+}
+
+.container.footer {
+    max-width: unset;
+    padding: 3rem;
+    background: var(--theme-color-green-40);
+
+    &> .row {
+        align-items: center;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        
+        .left {
+            align-items: flex-end;
+            text-align: right;
+
+            .column {
+                margin-top: 1.2rem
+            }
+        }
+
+        .site-title {
+            width: 20rem;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 10rem;
+            }
+        }
+
+        .right {
+            align-items: flex-start;
+            text-align: left;
+
+            .column {
+                margin-top: 1.2rem
+            }
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        .row.bold {
+            font-weight: bold;
+        }
+    }
+}
+
+.floating-to-top {
+    width: 3rem;
+    height: 3rem;
+    background: var(--theme-color-gray);
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: block;
+    border-radius: 1.2rem;
+
+    a {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 32px;
+            height: 32px;
         }
     }
 }

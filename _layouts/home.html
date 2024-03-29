@@ -55,14 +55,25 @@
               <div class="column icon">
                 <img class="icon" src="{{page.info[infoItem].logo}}" alt="{{page.info[infoItem].title}}" title="{{page.info[infoItem].title}}"/>
               </div>
-              {%- if page.info[infoItem].content -%}
+              {%- if infoItem == "phone" -%}
+                <div class="column no-content">
+                  <a href="tel:{{page.info[infoItem].title}}"  title="Composer le numéro">
+                    <div class="row title">{{page.info[infoItem].title}}</div>
+                  </a>
+                </div>
+              {%- endif -%}
+              {%- if infoItem == "address" -%}
+                <div class="column">
+                  <a href="{{page.externals.maps}}" rel="noopener" target="_blank" title="Lien Google Maps">
+                    <div class="row title">{{page.info[infoItem].title}}</div>
+                    <div class="row"><p>{{page.info[infoItem].content}}</p></div>
+                  </a>
+                </div>
+              {%- endif -%}
+              {%- if infoItem == "conv" -%}
                 <div class="column">
                   <div class="row title">{{page.info[infoItem].title}}</div>
                   <div class="row"><p>{{page.info[infoItem].content}}</p></div>
-                </div>
-              {%- else -%}
-                <div class="column no-content">
-                  <div class="row title">{{page.info[infoItem].title}}</div>
                 </div>
               {%- endif -%}
             </div>
@@ -136,10 +147,12 @@
           <div class="clip2-bottom-right">
               <img src="{{page.healing.thermo}}" alt="thermomètre" title="thermomètre"/>
           </div>
-          <div class="column button top20 meet">
-            <div class="row">{{page.healing.meet.sub}}</div>
-            <div class="row">{{page.healing.meet.cta}}</div>
-          </div>
+          <a href="tel:{{page.info[infoItem].title}}"  title="Composer le numéro">
+            <div class="column button top20 meet">
+              <div class="row">{{page.healing.meet.sub}}</div>
+              <div class="row">{{page.healing.meet.cta}}</div>
+            </div>
+          </a>
         </div>
       </section>
       <section class="opening column">
@@ -153,21 +166,21 @@
                 <h2>{{page.menu.opening}}</h2>
               </a>
             </div>
-            <div class="column">
+            <div class="column center">
               <h3>{{page.opening.sub}}</h3>
               <p>{{page.opening.time}}</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="legals column">
+      <section class="legals column center">
         <div class="row center separator">
           <img src="{{page.separators.default}}" alt="separateur" title="separateur"/>
         </div>
         <div class="row center section-title">
           <h2>{{page.legals.title}}</h2>
         </div>
-        <div class="row">
+        <div class="row update">
           <span>{{page.legals.updatedAt}}</span>
         </div>
         <div class="row">
@@ -179,15 +192,13 @@
       </section>
     </main>
 
-    <footer class="container site-footer h-card">
+    <footer class="container footer h-card">
       <data class="u-url" href="{{ "/" | relative_url }}"></data>
     
       <div class="row">
-        <div class="column">
-          <div class="column">
-            <div class="row">{{page.info.conv.title}}</div>
-            <div class="row">{{page.info.conv.content}}</div>
-          </div>
+        <div class="column left">
+          <div class="row bold">{{page.info.conv.title}}</div>
+          <div class="row">{{page.info.conv.content}}</div>
           <div class="column">
             <h3>{{page.opening.sub}}</h3>
             <p>{{page.opening.time}}</p>
@@ -196,22 +207,25 @@
         <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
           <img src="{{page.footer.logo}}" alt="{{ site.title | escape }}" title="{{ site.title | escape }}"/>
         </a>
-        <div class="column">
-          <div class="row">
-            {{page.info.phone.title}}
+        <div class="column right">
+          <div class="row bold">
+            <a href="tel:{{page.info[infoItem].title}}"  title="Composer le numéro">
+              {{page.info.phone.title}}
+            </a>
           </div>
           <div class="column">
-            <div class="row">
-              {{page.info.address.title}}
-            </div>
-            <p>
-              {{page.info.address.content}}
-            </p>
+            <a href="{{page.externals.maps}}" rel="noopener" target="_blank" title="Lien Google Maps">
+              <div class="row bold">
+                {{page.info.address.title}}
+              </div>
+              <p>{{page.info.address.content}}</p>
+            </a>
           </div>
         </div>
       </div>
     </footer>
-
+    <div class="floating-to-top">
+      <a href="#" rel="noopener" title="Retour en haut"><img src="{{page.to-top}}"></a>
+    </div>
   </body>
-
 </html>
