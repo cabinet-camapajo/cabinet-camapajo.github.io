@@ -57,7 +57,7 @@
               </div>
               {%- if infoItem == "phone" -%}
                 <div class="column no-content">
-                  <a href="tel:{{page.info[infoItem].title}}"  title="Composer le numéro">
+                  <a href="tel:{{page.info[infoItem].title}}" rel="noopener" title="Composer le numéro">
                     <div class="row title">{{page.info[infoItem].title}}</div>
                   </a>
                 </div>
@@ -147,7 +147,7 @@
           <div class="clip2-bottom-right">
               <img src="{{page.healing.thermo}}" alt="thermomètre" title="thermomètre"/>
           </div>
-          <a href="tel:{{page.info[infoItem].title}}"  title="Composer le numéro">
+          <a href="tel:{{page.info[infoItem].title}}" rel="noopener" title="Composer le numéro">
             <div class="column button top20 meet">
               <div class="row">{{page.healing.meet.sub}}</div>
               <div class="row">{{page.healing.meet.cta}}</div>
@@ -209,7 +209,7 @@
         </a>
         <div class="column right">
           <div class="row bold">
-            <a href="tel:{{page.info[infoItem].title}}"  title="Composer le numéro">
+            <a href="tel:{{page.info[infoItem].title}}" rel="noopener" title="Composer le numéro">
               {{page.info.phone.title}}
             </a>
           </div>

@@ -6,7 +6,6 @@
     --theme-color-pink-high: #e30b60;
     --theme-color-pink-medium: #e14065;
     --theme-color-pink-low: #dd979e;
-    --theme-color-pink-low-20: #dd979e33;
     --font-color-gray-low: #00000066; 
 
     /* Kollectik */
@@ -266,6 +265,10 @@ body {
     font-family: "Kollectif";
     font-size: 25px;
 
+    @media screen and (max-width: 304px) {
+        font-size: 20px;
+    }
+
     .trigger {
         gap: 10px;
         
@@ -295,7 +298,13 @@ body {
         .text-wrapper {
             width: 180px;
 
-            
+            @media screen and (max-width: 499px) {
+                margin-left: 1rem;
+            }
+
+            @media screen and (max-width: 304px) {
+                width: 140px;
+            }
         }
     }
 
@@ -306,6 +315,9 @@ body {
 
         img {
             width: 250px;
+            @media screen and (max-width: 444px) {
+                width: 100%;
+            }
         }
     }
 
@@ -314,6 +326,9 @@ body {
 
         .healing {
             padding-left: 50px;
+        }
+        @media screen and (max-width: 600px) {
+            z-index: 2;
         }
     }
 
@@ -333,6 +348,13 @@ body {
         background-size: contain;
         background-position-x: center;
         margin: 0 3rem;
+        background-repeat: repeat-x;
+        @media screen and (max-width: 444px) {
+            margin: 0;
+        }
+        @media screen and (max-width: 379px) {
+            height: 50px;
+        }
     }
 }
 
@@ -347,6 +369,10 @@ main.container {
     img.nurse {
         width: 300px;
         transform: rotateY(180deg);
+        
+        @media screen and (max-width: 730px) {
+            width: 100%;
+        }
     }
     .icon {
         max-width: 50px;
@@ -358,14 +384,30 @@ main.container {
 
     .info {
         font-size: 18px;
+        @media screen and (max-width: 529px) {
+            font-size: 16px;
+        }
+        @media screen and (max-width: 304px) {
+            font-size: 13px;
+        }
         font-family: Roboto, "Roboto";
         &> .column:nth-child(1) {
             align-items: flex-end;
             padding-right: 2rem;
+            @media screen and (max-width: 730px) {
+                align-self: center;
+            }
+            
+            @media screen and (max-width: 600px) {
+                display: none;
+            }
         }
         &> .column:nth-child(2) {
             align-items: flex-start;
             padding-left: 2rem;
+            @media screen and (max-width: 600px) {
+                flex: 0;
+            }
         }
     }
 
@@ -389,11 +431,19 @@ main.container {
         width: fit-content;
         display: flex;
         align-items: center;
+        text-align: center;
+
+        @media screen and (max-width: 449px) {
+            padding: 0.7rem 2rem;
+        }
 
         &.meet {
             font-weight: bold;
             .row:nth-child(2) {
                 font-size: 1.6rem;
+                @media screen and (max-width: 449px) {
+                    font-size: 1.4rem;
+                }
             }
         }
     }
@@ -402,6 +452,12 @@ main.container {
         .wrapper {
             position: relative;
             flex-flow: wrap;
+            @media screen and (max-width: 899px) {
+                gap: 25px;
+                div.column.Marion, div.column.Pauline {
+                    margin: 0;
+                }
+            }
             .column {
                 position: relative;
                 width: 400px;
@@ -494,6 +550,10 @@ main.container {
                     height: 15rem;
                     filter: drop-shadow(1px 1px 0 #00000060) drop-shadow(-1px -1px 0 #00000060);
                 }
+
+                @media screen and (max-width: 899px) {
+                    display: none;
+                }
             }
         }
     }
@@ -516,6 +576,9 @@ main.container {
                 position: absolute;
                 right: -3rem;
                 bottom: -4rem;
+                @media screen and (max-width: 419px) {
+                    display: none;
+                }
             }
 
             .row {
@@ -555,6 +618,9 @@ main.container {
                 position: absolute;
                 right: -3rem;
                 top: 4rem;
+                @media screen and (max-width: 619px) {
+                    display: none;
+                }
             }
             &-right {
                 img {
@@ -601,7 +667,13 @@ main.container {
             height: 13.5rem;
         }
         .opening-container {
-            background: var(--theme-color-pink-low-20);
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                opacity: 0.2;
+                background: var(--theme-color-pink-low);
+            }
             position: absolute;
             display: flex;
             flex-direction: column;
@@ -643,7 +715,11 @@ main.container {
             }
             margin-top: 3rem;
             width: 40%;
-            text-align: center
+            text-align: center;
+            @media screen and (max-width: 939px) {
+                width: unset;
+                max-width: 400px;
+            }
         }
         padding-bottom: 3rem;
     }
@@ -658,6 +734,14 @@ main.container {
         align-items: center;
         font-size: 0.8rem;
         line-height: 1.2rem;
+        
+        @media screen and (max-width: 529px) {
+            justify-content: space-between;
+        }
+        @media screen and (max-width: 409px) {
+            flex-flow: wrap;
+            gap: 1rem;
+        }
         
         .left {
             align-items: flex-end;
@@ -674,6 +758,9 @@ main.container {
             justify-content: center;
             img {
                 width: 10rem;
+                @media screen and (max-width: 529px) {
+                    display: none;
+                }
             }
         }
 
@@ -701,7 +788,7 @@ main.container {
     height: 3rem;
     background: var(--theme-color-gray);
     position: fixed;
-    top: 1rem;
+    top: 4rem;
     right: 1rem;
     display: block;
     border-radius: 1.2rem;
