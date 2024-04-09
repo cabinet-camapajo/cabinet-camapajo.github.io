@@ -463,6 +463,12 @@ main.container {
                 width: 400px;
                 flex: unset;
                 padding: 20px 70px 20px;
+                @media screen and (max-width: 374px) {
+                    padding: 20px 40px 20px;
+                }
+                @media screen and (max-width: 319px) {
+                    padding: 20px 20px 20px;
+                }
 
                 h3, h4 {
                     margin: 0;
@@ -559,6 +565,8 @@ main.container {
     }
 
     section.healing {
+        overflow: hidden;
+
         .clip {
             position: relative;
             margin-bottom: 3rem;    
@@ -576,9 +584,6 @@ main.container {
                 position: absolute;
                 right: -3rem;
                 bottom: -4rem;
-                @media screen and (max-width: 419px) {
-                    display: none;
-                }
             }
 
             .row {
@@ -593,6 +598,10 @@ main.container {
         .clip2 {
             position: relative;
             padding: 3rem 3rem 1rem;
+            
+            @media screen and (max-width: 319px) {
+                padding: 3rem 1rem 1rem;
+            }
 
             img {
                 height: 6rem;
@@ -618,8 +627,11 @@ main.container {
                 position: absolute;
                 right: -3rem;
                 top: 4rem;
-                @media screen and (max-width: 619px) {
-                    display: none;
+                @media screen and (max-width: 389px) {
+                    right: -4.5rem;
+                }
+                @media screen and (max-width: 319px) {
+                    right: -6rem;
                 }
             }
             &-right {
@@ -630,11 +642,19 @@ main.container {
                 right: 8rem;
                 top: 10rem;
                 transform: rotate(13deg);
+                @media screen and (max-width: 630px) {
+                    right: calc(-15rem + 69%);
+                    top: calc(-15rem + 57%);
+                }
             }
             &-bottom-right {
                 position: absolute;
                 right: 1rem;
                 bottom: 11rem;
+                @media screen and (max-width: 669px) {
+                    bottom: 35%;
+                    right: calc(-13rem + 39%);
+                }
             }
 
             .row {
