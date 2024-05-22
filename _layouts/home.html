@@ -3,7 +3,7 @@
 
   {%- include head.html -%}
 
-  <body>
+  <body class="body-main">
     <h1>{{site.title}}</h1>
     <header class="container header column" role="banner">
       <div class="wrapper row">
@@ -187,7 +187,9 @@
           <p>{{page.legals.content}}</p>
         </div>
         <div class="column button">
-          <h3>{{page.legals.consult}}</h3>
+          <a href="/legal-terms" target="_blank" rel="noopener" title="Voir les mentions légales">
+            <h3>{{page.legals.consult}}</h3>
+          </a>
         </div>
       </section>
     </main>

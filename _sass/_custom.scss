@@ -1,42 +1,37 @@
 :root {
     --theme-color-green: #84cac1;
-    --theme-color-green-60: #84CAC299;
-    --theme-color-green-40: #84CAC266;
+    --theme-color-green-60: #84CAC199;
+    --theme-color-green-40: #84cac166;
+    --theme-color-green-20: #84cac133;
     --theme-color-gray: #edf1f0;
     --theme-color-pink-high: #e30b60;
     --theme-color-pink-medium: #e14065;
+    --theme-color-pink-medium-20: #e1406533;
     --theme-color-pink-low: #dd979e;
-    --font-color-gray-low: #00000066; 
+    --theme-color-pink-low-20: #dd979e33;
+    --font-color-gray-low: #00000099; 
 
     /* Kollectik */
     @font-face {
         font-family: "Kollectif";
-        src:
-          local("Kollectif"),
-          url("fonts\\Kollektif.ttf") format("TrueType");
+        src: url("/assets/fonts/Kollektif.ttf") format("TrueType");
     }
 
     @font-face {
         font-family: "Kollectif";
-        src:
-          local("Kollectif"),
-          url("fonts\\Kollektif-Bold.ttf") format("TrueType");
+        src: url("/assets/fonts/Kollektif-Bold.ttf") format("TrueType");
         font-weight: bold;
     }
 
     @font-face {
         font-family: "Kollectif";
-        src:
-          local("Kollectif"),
-          url("fonts\\Kollektif-Italic.ttf") format("TrueType");
+        src: url("/assets/fonts/Kollektif-Italic.ttf") format("TrueType");
         font-style: italic;
     }
 
     @font-face {
         font-family: "Kollectif";
-        src:
-          local("Kollectif"),
-          url("fonts\\Kollektif-BoldItalic.ttf") format("TrueType");
+        src:  url("/assets/fonts/Kollektif-BoldItalic.ttf") format("TrueType");
         font-weight: bold;
         font-style: italic;
     }
@@ -45,131 +40,99 @@
     /* Roboto */
     @font-face {
         font-family: "Roboto Bk";
-        src:
-          local("Roboto Bk"),
-          url("fonts\\Roboto-Black.ttf") format("TrueType");
+        src: url("/assets/fonts/Roboto-Black.ttf") format("TrueType");
     }
 
     @font-face {
         font-family: "Roboto Bk";
-        src:
-          local("Roboto Bk"),
-          url("assets\fonts\Roboto-BlackItalic.ttf") format("TrueType");
+        src: url("/assets/fonts/Roboto-BlackItalic.ttf") format("TrueType");
         font-style: italic;
     }
 
     @font-face {
         font-family: "Roboto";
-        src:
-          local("Roboto"),
-          url("fonts\\Roboto-Bold.ttf") format("TrueType");
+        src: url("/assets/fonts/Roboto-Bold.ttf") format("TrueType");
         font-weight: bold;
     }
 
     @font-face {
         font-family: "Roboto";
-        src:
-          local("Roboto"),
-          url("fonts\\Roboto-Italic.ttf") format("TrueType");
+        src: url("/assets/fonts/Roboto-Italic.ttf") format("TrueType");
         font-style: italic;
     }
 
     @font-face {
         font-family: "Roboto";
-        src:
-          local("Roboto"),
-          url("fonts\\Roboto-BoldItalic.ttf") format("TrueType");
+        src: url("/assets/fonts/Roboto-BoldItalic.ttf") format("TrueType");
         font-weight: bold;
         font-style: italic;
     }
 
     @font-face {
         font-family: "Roboto";
-        src:
-          local("Roboto"),
-          url("fonts\\Roboto-Thin.ttf") format("TrueType");
+        src: url("/assets/fonts/Roboto-Thin.ttf") format("TrueType");
         font-weight: 100;
     }
 
     @font-face {
         font-family: "Roboto";
-        src:
-          local("Roboto"),
-          url("fonts\\Roboto-ThinItalic.ttf") format("TrueType");
+        src:  url("/assets/fonts/Roboto-ThinItalic.ttf") format("TrueType");
         font-weight: 100;
         font-style: italic;
     }
 
     @font-face {
         font-family: "Roboto";
-        src:
-          local("Roboto"),
-          url("fonts\\Roboto-Light.ttf") format("TrueType");
+        src: url("/assets/fonts/Roboto-Light.ttf") format("TrueType");
         font-weight: 300;
     }
 
     @font-face {
         font-family: "Roboto";
-        src:
-          local("Roboto"),
-          url("fonts\\Roboto-LightItalic.ttf") format("TrueType");
+        src: url("/assets/fonts/Roboto-LightItalic.ttf") format("TrueType");
         font-weight: 300;
         font-style: italic;
     }
 
     @font-face {
         font-family: "Roboto";
-        src:
-          local("Roboto"),
-          url("fonts\\Roboto-Regular.ttf") format("TrueType");
+        src: url("/assets/fonts/Roboto-Regular.ttf") format("TrueType");
         font-weight: 400;
     }
 
     @font-face {
         font-family: "Roboto";
-        src:
-          local("Roboto"),
-          url("fonts\\Roboto-Medium.ttf") format("TrueType");
+        src: url("/assets/fonts/Roboto-Medium.ttf") format("TrueType");
         font-weight: 500;
     }
 
     @font-face {
         font-family: "Roboto";
-        src:
-          local("Roboto"),
-          url("fonts\\Roboto-MediumItalic.ttf") format("TrueType");
+        src: url("/assets/fonts/Roboto-MediumItalic.ttf") format("TrueType");
         font-weight: 500;
         font-style: italic;
     }
 
     @font-face {
         font-family: "Roboto Cn";
-        src:
-          local("Roboto Cn"),
-          url("fonts\\Roboto-Condensed.ttf") format("TrueType");
+        src: url("/assets/fonts/Roboto-Condensed.ttf") format("TrueType");
     }
 
     @font-face {
         font-family: "Roboto Cn";
-        src:
-          local("Roboto Cn"),
-          url("fonts\\Roboto-BoldCondensed.ttf") format("TrueType");
+        src: url("/assets/fonts/Roboto-BoldCondensed.ttf") format("TrueType");
         font-weight: bold;
     }
 
     @font-face {
         font-family: "Roboto Cn";
-        src:
-          local("Roboto Cn"),
-          url("fonts\\Roboto-CondensedItalic.ttf") format("TrueType");
+        src: url("/assets/fonts/Roboto-CondensedItalic.ttf") format("TrueType");
         font-style: italic;
     }
 
     @font-face {
         font-family: "Roboto Cn";
-        src:
-          local("Roboto Cn"),
-          url("fonts\\Roboto-BoldCondensedItalic.ttf") format("TrueType");
+        src: url("/assets/fonts/Roboto-BoldCondensedItalic.ttf") format("TrueType");
         font-weight: bold;
         font-style: italic;
     }
@@ -183,12 +146,33 @@
         color: var(--theme-color-pink-high);
     }
 
-    p {
+    .body-main p {
         padding: 0;
         margin: 0;
         white-space: pre;
     }
 
+    .legal-terms {
+        width: 80%;
+        max-width: 800px;
+        margin: auto;
+        font-size: 11px;
+
+        h1 {
+            font-size: 22px;
+            color: var(--theme-color-green);
+        }
+
+        h2 {
+            font-size: 20px;
+            color: var(--theme-color-pink-high);
+        }
+
+        a {
+            text-decoration: underline;
+            color: var(--theme-color-pink-medium);
+        }
+    }
 }
 
 .row {
@@ -233,7 +217,7 @@
     }
 }
 
-h1 {
+.body-main h1 {
     position: absolute;
     margin-top: -1000px;
 }
@@ -262,7 +246,7 @@ body {
 
 .header {
     margin-top: 30px;
-    font-family: "Kollectif";
+    font-family: "Kollectif", 'Kollektif';
     font-size: 25px;
 
     @media screen and (max-width: 304px) {
@@ -420,7 +404,7 @@ main.container {
 
     .section-title h2 {
         font-size: 1.8rem;
-        font-family: "Kollectif";
+        font-family: "Kollectif", 'Kollektif';
         font-weight: normal;
     }
 
@@ -473,49 +457,37 @@ main.container {
                 h3, h4 {
                     margin: 0;
                     padding: 0;
-                    font-family: "Kollectif";
+                    font-family: "Kollectif", 'Kollektif';
                     font-weight: normal;
                 }
 
                 h3 {
                     line-height: 30px;
                     font-size: 20px;
-                    mix-blend-mode: color;
                 }
 
                 h4 {
                     line-height: 30px;
                     font-size: 16px;
                     font-style: italic;
-                    margin-bottom: 20px
+                    margin-bottom: 20px;
+                    color: var(--font-color-gray-low);
                 }
 
                 p {
-                    text-wrap: pretty;
+                    white-space: normal;
                     text-align: justify;
                     font-size: 15px;
                 }
 
-                
-                &::before {
-                    content: "";
-                    position: absolute;
-                    inset: 0;
-                    opacity: 0.2;
-                }
-
                 &.Caroline {
-                    &::before {
-                        background: var(--theme-color-green);
-                    }
+                    background: var(--theme-color-green-20);
                     h3 {
                         color: var(--theme-color-pink-low);
                     }
                 }
                 &.Marion {
-                    &::before {
-                        background: var(--theme-color-pink-low);
-                    }
+                    background: var(--theme-color-pink-low-20);
                     h3, h4 {
                         width: 8rem;
                     }
@@ -526,9 +498,7 @@ main.container {
                     align-items: flex-end;
                 }
                 &.Pauline {
-                    &::before {
-                        background: var(--theme-color-pink-medium);
-                    }
+                    background: var(--theme-color-pink-medium-20);
                     h3, h4 {
                         width: 8rem;
                     }
@@ -539,9 +509,7 @@ main.container {
                     align-items: flex-end;
                 }
                 &.Johanna {
-                    &::before {
-                        background: var(--theme-color-green);
-                    }
+                    background: var(--theme-color-green-20);
                     h3 {
                         color: var(--theme-color-pink-high);
                     }
@@ -727,7 +695,7 @@ main.container {
         }
         p {
             text-align: justify;
-            text-wrap: pretty;
+            white-space: normal;
         }
         .column.button {
             h3 {
