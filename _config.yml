@@ -31,15 +31,17 @@ description: >
   Marion Gonzalez
   Pauline Bacquey
   Johanna Dieu-Derathe
-  Soins
-  Pansements simples ou complexes
-  Injections
+  Soin
+  Pansement simple
+  Pansement complexe
+  Injection
   Prises de sang
-  Perfusions
-  Nutritions enténales ou parenténales
+  Perfusion
+  Nutrition entérale
+  Nutrition parentérale
   Soins en lien avec le diabète
   Aide à la réalisation de certains actes de la vie quotidienne
-  Pose de contentions
+  Pose de contention
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 

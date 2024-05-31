@@ -101,15 +101,17 @@ healing:
         - Injections
         - Prises de sang
         - Perfusions
-        - Nutritions enténales ou parenténales
+        - Nutritions entérales ou parentérales
         - Soins en lien avec le diabète
         - Aide à la réalisation de certains actes de la vie quotidienne
         - Pose de contentions
         - etc...
     footer: Dans le respect de l’article R4311-7 du code de la Santé Publique.
     meet: 
-        sub: Les RDV se prennent uniquement par téléphone
-        cta: Cliquez ici pour nous appeler !
+        sub: Les RDV se prennent par téléphone ou sur l'agenda en ligne
+        cta-phone: Cliquez ici pour nous appeler !
+        cta-rdv: Prenez rendez-vous !
+        cta-rdv-link: https://calendar.google.com/calendar/appointments/schedules/AcZssZ1rPRwHa6QXxQAsWfGV7RMInlUFeyZJ5hwVTAzD0cjm5FY9urK6nfA316h2eiL2y2e61oni_Ey4
 
 opening:
     sub: 7j/7 et jours fériés

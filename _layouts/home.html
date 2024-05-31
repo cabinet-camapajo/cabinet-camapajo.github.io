@@ -147,12 +147,19 @@
           <div class="clip2-bottom-right">
               <img src="{{page.healing.thermo}}" alt="thermomètre" title="thermomètre"/>
           </div>
-          <a href="tel:{{page.info.phone.title}}" rel="noopener" title="Composer le numéro">
-            <div class="column button top20 meet">
-              <div class="row">{{page.healing.meet.sub}}</div>
-              <div class="row">{{page.healing.meet.cta}}</div>
-            </div>
-          </a>
+          <div class="meet column">
+            <div class="row">{{page.healing.meet.sub}}</div>
+            <a href="tel:{{page.info.phone.title}}" rel="noopener" title="Composer le numéro">
+              <div class="column button top10">
+                <div class="row">{{page.healing.meet.cta-phone}}</div>
+              </div>
+            </a>
+            <a href="{{page.healing.meet.cta-rdv-link}}" rel="noopener" title="Prenez rendez-vous en ligne" target="_blank">
+              <div class="column button top10">
+                <div class="row">{{page.healing.meet.cta-rdv}}</div>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
       <section class="opening column">

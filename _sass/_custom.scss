@@ -642,8 +642,15 @@ main.container {
             }
         }
 
-        .top20 {
+        .top10 {
+            margin-top: 1rem;
+        }
+
+        .meet {
             margin-top: 2rem;
+            font-weight: bold;
+            align-items: center;
+            text-align: center;
         }
     }
 
