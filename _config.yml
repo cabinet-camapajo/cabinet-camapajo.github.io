@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Cabinet Infirmier des Palanques
-email: cabinet.camapajo@gmail.com
+title: Cabinet Infirmier des Palanques - Saint Jean D'Illac
+email: infirmieres.saintjeandillac@gmail.com
 lang: fr
 description: >
   Cabinet Infirmier des Palanques, 
@@ -43,7 +43,7 @@ description: >
   Aide à la réalisation de certains actes de la vie quotidienne
   Pose de contention
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.infirmieres-saintjeandillac.fr" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
