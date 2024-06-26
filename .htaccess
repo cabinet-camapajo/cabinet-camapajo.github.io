@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^infirmieres-saintjeandillac.fr$
+RewriteRule ^(.*) hrrp://www.infirmieres-saintjeandillac.fr/$1 [QSA,L,R=301]
