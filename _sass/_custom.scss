@@ -578,8 +578,10 @@ main.container {
                     .picture {
                         left: -88px;
                         rotate: -4deg;
-                        bottom: 20%;
 
+                        @media screen and (max-width: 1010px) {
+                            bottom: 20%;
+                        }
                         @media screen and (max-width: 415px) {
                             left: -58px;
                         }
