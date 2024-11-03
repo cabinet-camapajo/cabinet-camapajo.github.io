@@ -442,11 +442,19 @@ main.container {
                     margin: 0;
                 }
             }
+            @media screen and (max-width: 745px) {
+                flex-direction: column;
+                align-items: center;
+            }
             .column {
                 position: relative;
                 width: 400px;
                 flex: unset;
                 padding: 20px 70px 20px;
+                @media screen and (max-width: 1010px) {
+                    width: 40%;
+                    min-width: 250px;
+                }
                 @media screen and (max-width: 374px) {
                     padding: 20px 40px 20px;
                 }
@@ -480,10 +488,47 @@ main.container {
                     font-size: 15px;
                 }
 
+                .picture {
+                    background: #FFF;
+                    padding: 0.5rem 0.5rem 1rem;
+                    position: absolute;
+                    display: flex;
+                    border: 1px solid #00000030;
+
+                    img {
+                        height: 10rem;
+                        width: auto;
+
+                        @media screen and (max-width: 415px) {
+                            height: 8rem;
+                        }
+                    }
+                }
+
                 &.Caroline {
                     background: var(--theme-color-green-20);
                     h3 {
                         color: var(--theme-color-pink-low);
+                    }
+                    .picture {
+                        left: -90px;
+                        rotate: 4deg;
+
+                        @media screen and (max-width: 415px) {
+                            left: -60px;
+                        }
+                        @media screen and (max-width: 370px) {
+                            left: -40px;
+                        }
+                    }
+                    @media screen and (max-width: 770px) {
+                        padding: 20px 50px 20px 70px;
+                    }
+                    @media screen and (max-width: 465px) {
+                        align-self: flex-end;
+                    }
+                    @media screen and (max-width: 370px) {
+                        padding: 20px 30px 20px 90px;
                     }
                 }
                 &.Marion {
@@ -496,6 +541,28 @@ main.container {
                     }
                     margin-top: 25px;
                     align-items: flex-end;
+
+                    .picture {
+                        right: -87px;
+                        top: -28px;
+                        rotate: -6deg;
+
+                        @media screen and (max-width: 415px) {
+                            right: -57px;
+                        }
+                        @media screen and (max-width: 370px) {
+                            right: -37px;
+                        }
+                    }
+                    @media screen and (max-width: 770px) {
+                        padding: 20px 70px 20px 50px;
+                    }
+                    @media screen and (max-width: 465px) {
+                        align-self: flex-start;
+                    }
+                    @media screen and (max-width: 370px) {
+                        padding: 20px 90px 20px 20px;
+                    }
                 }
                 &.Pauline {
                     background: var(--theme-color-pink-medium-20);
@@ -507,11 +574,54 @@ main.container {
                     }
                     margin-bottom: 25px;
                     align-items: flex-end;
+
+                    .picture {
+                        left: -88px;
+                        rotate: -4deg;
+                        bottom: 20%;
+
+                        @media screen and (max-width: 415px) {
+                            left: -58px;
+                        }
+                        @media screen and (max-width: 370px) {
+                            left: -38px;
+                        }
+                    }
+                    @media screen and (max-width: 770px) {
+                        padding: 20px 50px 20px 70px;
+                    }
+                    @media screen and (max-width: 465px) {
+                        align-self: flex-end;
+                    }
+                    @media screen and (max-width: 370px) {
+                        padding: 20px 30px 20px 90px;
+                    }
                 }
                 &.Johanna {
                     background: var(--theme-color-green-20);
                     h3 {
                         color: var(--theme-color-pink-high);
+                    }
+
+                    .picture {
+                        right: -90px;
+                        rotate: 2deg;
+
+                        @media screen and (max-width: 415px) {
+                            right: -60px;
+                        }
+                        @media screen and (max-width: 370px) {
+                            right: -40px;
+                        }
+                    }
+                    @media screen and (max-width: 770px) {
+                        padding: 20px 70px 20px 50px;
+                    }
+                    @media screen and (max-width: 465px) {
+                        align-self: flex-start;
+                    }
+                    @media screen and (max-width: 370px) {
+                        padding: 20px 90px 20px 20px;
                     }
                 }
             }

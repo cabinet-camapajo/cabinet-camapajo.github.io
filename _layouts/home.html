@@ -93,6 +93,9 @@
         <div class="row center wrapper">
           {%- for member in page.team.members -%}
           <div class="column {{member.member}}">
+            <div class="picture">
+                <img src="assets/images/{{member.member}}.jpg" alt="photo {{member.member}}" title="photo {{member.member}}"/>
+            </div>
             <h3>{{member.member}}</h3>
             <h4>{{member.diploma}}</h4>
             <p>{{member.content}}</p>
